@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "첫 기록"
-tags: tag1 
+tags: tag1 tag2 tag3 tag4
 ---
 
 ## 첫 기록
