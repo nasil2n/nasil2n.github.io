@@ -1,9 +1,9 @@
 permalink: /:year:month:day/:title
-url: #Your url here
+url: #https://nasil2n.github.io
 baseurl: /project
 
 # variables
-name: blogs\:nasil2n
+name: blogs\nasil2n
 description: lifestyle 
 google_verification: null
 
