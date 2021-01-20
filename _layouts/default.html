@@ -38,7 +38,8 @@
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
 				{% endfor %}
 			</ul>
-				</li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>	
+			<ul id="tag-list">	
+				</li><a href="/" ><img src="/assets/img/disk.png" />(D:)</a>	
 			</ul>
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
