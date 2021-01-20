@@ -40,6 +40,15 @@
 			</ul>
 				</li>
 			</ul>
+				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>	
+			<ul>
+				{% assign tags = site.tags | sort %}
+				{% for tag in tags %}
+				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
+				{% endfor %}
+			</ul>
+				</li>
+			</ul>
 		</div>
 		<div class="post_list">
 			{% unless page.date%}
@@ -88,6 +97,7 @@
 				{% endif %}
 			</div>
 		</div>
+	
     {% endif %}
 	<script src="/assets/js/001.js"></script>
 	<script src="/assets/js/002.js"></script>
