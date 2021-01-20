@@ -31,9 +31,9 @@
 		{% include topbar.html %}
 		<div class="tag_list">
 			<ul id="tag-list">
-			<ul>
-				<li><a href="/" ><img src="/assets/img/disk.png" />(C:) - Tech</a>
 			
+				<li><a href="/" ><img src="/assets/img/disk.png" />(C:) - Tech</a>
+			<ul>
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
