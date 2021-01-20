@@ -41,6 +41,19 @@
 				</li>
 			</ul>
 		</div>
+		{% include topbar.html %}
+		<div class="tag_list">
+			<ul id="tag-list">
+				<li><a href="/" ><img src="/assets/img/disk.png" />(:)</a>	
+			<ul>
+				{% assign tags = site.tags | sort %}
+				{% for tag in tags %}
+				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
+				{% endfor %}
+			</ul>
+				</li>
+			</ul>
+		</div>
 		<div class="post_list">
 			{% unless page.date%}
 				{% if page.title == 'me' or page.title == '404...' %}
@@ -88,6 +101,7 @@
 				{% endif %}
 			</div>
 		</div>
+	
 	
     {% endif %}
 	<script src="/assets/js/001.js"></script>
