@@ -37,11 +37,11 @@
 				{% for tag in tags %}
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
 				{% endfor %}
-			</ul>
+			
 					
-			<ul id="tag-list">	
+				
 				</li><a href="/" ><img src="/assets/img/disk.png" />(D:) - Life</a>	
-			<ul>
+			
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
